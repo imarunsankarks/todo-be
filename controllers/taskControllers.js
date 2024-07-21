@@ -1,4 +1,5 @@
 const Task = require("../schema/taskSchema");
+const { initialTask } = require('../schedulers/scheduler');
 
 // get all tasks
 const getAll = async (req, res) => {
@@ -42,6 +43,12 @@ const postTask = async (req, res) => {
       deadline,
     });
     res.status(200).json(tasks);
+    if (recurrence !== 'none') {
+      initialTask(title, description, user, status, recurrence, deadline).catch(error => {
+        console.error(`Error creating ${recurrence} task:`, error);
+      });
+
+    }
   } catch (error) {
     res.status(500).json({ error: error.message });
   }

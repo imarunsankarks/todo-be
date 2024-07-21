@@ -5,8 +5,7 @@ const cors = require('cors');
 
 const taskRoute = require('./routes/taskRoute');
 const userRoute = require('./routes/userRoute')
-// const scheduleTask = require('./schedulers/scheduler');
-// const completionCheck = require('./schedulers/completionCheck')
+const { scheduleTasks } = require('./schedulers/scheduler');
 
 const app = express();
 app.use(cors());
@@ -21,7 +20,6 @@ mongoose.connect(process.env.MONGO_URI)
         app.listen(process.env.PORT, () => {
             console.log('connected to MongoDB and listening to port ', process.env.PORT);
         })
-        // scheduleTask();
-        // completionCheck();
+        scheduleTasks();
     })
     .catch(err => console.log(err))

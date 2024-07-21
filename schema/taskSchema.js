@@ -23,7 +23,7 @@ const taskSchema = new Schema(
         },
         recurrence: {
             type: String,
-            enum: ['none', 'daily', 'weekly', 'monthly'],
+            enum: ['none', 'daily', 'weekly', 'monthly', 'daily none', 'weekly none', 'monthly none'],
             default: 'none'
         },
         deadline: {

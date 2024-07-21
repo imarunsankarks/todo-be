@@ -92,11 +92,13 @@ describe('Task Controller', () => {
             await getAll(req, res);
 
             expect(res.status).to.have.been.calledWith(200);
-            expect(res.json).to.have.been.calledWith(sinon.match.array.deepContaining([
-                sinon.match.has('title'),
-                sinon.match.has('createdAt'),
-                sinon.match.has('description')
-            ]));
+            expect(res.json).to.have.been.calledWith(sinon.match((value) => {
+                return value.every(task =>
+                    'title' in task &&
+                    'createdAt' in task &&
+                    'description' in task
+                );
+            }));
         });
     });
 
