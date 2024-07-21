@@ -38,16 +38,11 @@ Node.js (v20 or higher recommended)
 npm (v6 or higher recommended)
 MongoDB (local or a MongoDB Atlas account)
 
-Installation
-Clone the repository:
+### Installation
+Clone the repository: git clone https://github.com/imarunsankarks/todo-be.git
+cd todo-be
 
-bash
-Copy code
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-Install dependencies:
+### Install dependencies:
 
-bash
-Copy code
 npm install
 
