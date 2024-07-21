@@ -7,10 +7,9 @@
 - [Features](#-features)
 - [Technologies Used](#technologies-used)
 - [Installation Steps](#%EF%B8%8F-installation-steps)
-- [Environment Variables](#environment-variables)
-- [API Endpoints](#api-endpoints)
-- [Cron Jobs](#cron-jobs)
-- [Testing]
+- [Configuration](#configuration)
+- [Cron Jobs](#-scheduling-tasks-with-cron)
+- [Testing](#-unit-testing)
   
 ## <h2>🧐 Features</h2>
 
