@@ -1,4 +1,4 @@
-# Node.js Backend Project for office dashboard
+# Node.js Backend Project for TODO dashboard
 
 This is a Node.js backend project that provides an API for user authentication and task management using MongoDB. The application includes user signup and login functionality with JWT-based authentication and supports task creation with recurrence and deadline features.
 
@@ -32,6 +32,22 @@ This is a Node.js backend project that provides an API for user authentication a
 ## Getting Started
 
 ### Prerequisites
+Ensure you have the following installed on your local development machine:
 
-- Node.js (v12 or later)
-- MongoDB instance (you can use MongoDB Atlas or a local MongoDB server)
+Node.js (v20 or higher recommended)
+npm (v6 or higher recommended)
+MongoDB (local or a MongoDB Atlas account)
+
+Installation
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+Install dependencies:
+
+bash
+Copy code
+npm install
+
