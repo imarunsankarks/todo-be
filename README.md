@@ -10,7 +10,7 @@
 - [Environment Variables](#environment-variables)
 - [API Endpoints](#api-endpoints)
 - [Cron Jobs](#cron-jobs)
-- [License](#license)
+- [Testing]
   
 ## <h2>🧐 Features</h2>
 
@@ -76,4 +76,16 @@ PORT=your_port
 MONGO_URI=your_mongo_uri
 JWT_SECRET=your_jwt_secret
 ```
+
+## 🕒 Scheduling Tasks with Cron
+In this project, I used cron for scheduling tasks with different recurrence patterns:
+- Daily Tasks: Run every day at 9:30 AM
+- Weekly Tasks: Run every Sunday at 9:30 AM
+- Monthly Tasks: Run on the 1st day of every month at 9:30 AM
+
+## 🧪 Unit Testing
+Unit tests ensure that individual parts of the application work as expected. For the task controller and user controller, I used Mocha and Chai for unit testing.
+
+We use Sinon for stubbing dependencies and Chai for assertions. Each test case checks the expected output and error handling, ensuring robust and reliable code.
+
 
