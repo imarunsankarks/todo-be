@@ -1,9 +1,8 @@
 const chai = require('chai');
 const sinon = require('sinon');
 const chaiHttp = require('chai-http');
-const { server } = require('../../server.js'); // Adjust the path to your Express server
-const { getAll, getOne, postTask, deleteTask, updateTask } = require('../../controllers/taskControllers.js'); // Adjust the path to your Task controller
-const Task = require('../../schema/taskSchema.js'); // Adjust the path to your Task model
+const { getAll, getOne, postTask, deleteTask, updateTask } = require('../../controllers/taskControllers.js');
+const Task = require('../../schema/taskSchema.js');
 
 const expect = chai.expect;
 chai.use(chaiHttp);
@@ -150,21 +149,19 @@ describe('Task Controller', () => {
             };
             const savedTask = { ...newTask, _id: 'newTaskId' };
 
-            // Stub the Task.create method
             sandbox.stub(Task, 'create').resolves(savedTask);
 
             req.body = newTask;
 
             await postTask(req, res);
 
-            expect(res.status).to.have.been.calledWith(200); // Check for 201 status code
+            expect(res.status).to.have.been.calledWith(200);
             expect(res.json).to.have.been.calledWith(savedTask);
         });
 
         it('should return 500 if there is an error creating a task', async () => {
             const errorMessage = 'Database error';
 
-            // Stub the Task.create method to throw an error
             sandbox.stub(Task, 'create').throws(new Error(errorMessage));
 
             req.body = {

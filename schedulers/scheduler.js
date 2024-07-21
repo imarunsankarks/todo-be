@@ -83,7 +83,7 @@ const createRecurringTasks = async (recurrence) => {
       });
 
       await newTask.save();
-      console.log(`New ${recurrence} task created for ${task.user}`);
+      // console.log(`New ${recurrence} task created for ${task.user}`);
     }
   } catch (error) {
     console.error(`Error creating ${recurrence} tasks:`, error);
