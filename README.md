@@ -4,7 +4,7 @@
 
 ## Table of Contents
 
-- [Features](#features)
+- [Features](#-features)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
 - [Environment Variables](#environment-variables)
