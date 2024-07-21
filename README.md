@@ -68,3 +68,12 @@ npm run test
 - JSON Web Tokens (JWT)
 - bcrypt for password hashing
 - node-cron for scheduling tasks
+
+## Configuration
+This project uses environment variables for configuration. Create a .env file in the root directory and add your configurations:
+```
+PORT=your_port
+MONGO_URI=your_mongo_uri
+JWT_SECRET=your_jwt_secret
+```
+
