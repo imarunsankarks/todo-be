@@ -6,7 +6,7 @@
 
 - [Features](#-features)
 - [Technologies Used](#technologies-used)
-- [Installation Steps](#-installation-steps)
+- [Installation Steps](#%EF%B8%8F-installation-steps)
 - [Environment Variables](#environment-variables)
 - [API Endpoints](#api-endpoints)
 - [Cron Jobs](#cron-jobs)
