@@ -2,7 +2,15 @@
 
 <p id="description">This is a Node.js backend project that provides an API for user authentication and task management using MongoDB. The application includes user signup and login functionality with JWT-based authentication and supports task creation with recurrence and deadline features.</p>
 
-  
+## Table of Contents
+
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Environment Variables](#environment-variables)
+- [API Endpoints](#api-endpoints)
+- [Cron Jobs](#cron-jobs)
+- [License](#license)
   
 <h2>🧐 Features</h2>
 
@@ -51,3 +59,12 @@ npm run dev
 ```
 npm run test
 ```
+
+## Technologies Used
+
+- Node.js
+- Express.js
+- MongoDB with Mongoose
+- JSON Web Tokens (JWT)
+- bcrypt for password hashing
+- node-cron for scheduling tasks
